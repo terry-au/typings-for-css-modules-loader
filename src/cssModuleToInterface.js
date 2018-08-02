@@ -14,7 +14,7 @@ const cssModuleToTypescriptInterfaceProperties = (cssModuleKeys, indent = '  ') 
 
 const cssModuleToNamedExports = (cssModuleKeys) => {
   return cssModuleKeys
-    .map((key) => `export const ${key}: string;`)
+    .map((key) => `export default const ${key}: string;`)
     .join('\n');
 };
 
